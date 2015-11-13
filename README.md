@@ -1,8 +1,8 @@
-Fork Note:  This is a shameful rip of the below mentioned repository.  Minor modifications have been made but the credit belongs to github member "shaithana".  Original:  shaithana/cordova-plugin-wezka-nativecamera
 
-Added the files iOS and Windows8 camera files from com.logilite.vision.camera to make an inclusive package.
 
-Updates mirrored from Grassik as well.
+Fork Note:  This is a fork of https://github.com/wbt11a/cordova-plugin-wezka-nativecamera native camera plugin that supports both iOS and Android builds. This fork fixes the compile issues in Cordova 5 as reported at https://github.com/shaithana/cordova-plugin-wezka-nativecamera/issues/38.
+
+To install use cordova add plugin https://github.com/zebra1024/cordova-plugin-wezka-nativecamera
 
 com.wezka.nativecamera
 ==========================
@@ -16,6 +16,3 @@ It is adapted from https://code.google.com/p/foreground-camera-plugin/
 It offers advanced features such as flash support (auto/on/off), the tap-focus/exposure and the correct handling of image rotation.
 
 
-To install this plugin, follow the [Command-line Interface Guide](http://cordova.apache.org/docs/en/edge/guide_cli_index.md.html#The%20Command-line%20Interface).
-
-If you are not using the Cordova Command-line Interface, follow [Using Plugman to Manage Plugins](http://cordova.apache.org/docs/en/edge/guide_plugin_ref_plugman.md.html).
