@@ -82,12 +82,15 @@
              <feature name="Camera">
                  <param name="ios-package" value="CDVCamera" />
              </feature>
+             <preference name="CameraUsesGeolocation" value="false" />
          </config-file>
-
+         
          <js-module src="www/ios/CameraPopoverHandle.js" name="CameraPopoverHandle">
-            <clobbers target="CameraPopoverHandle" />
+             <clobbers target="CameraPopoverHandle" />
          </js-module>
-
+         
+         <header-file src="src/ios/UIImage+CropScaleOrientation.h" />
+         <source-file src="src/ios/UIImage+CropScaleOrientation.m" />
          <header-file src="src/ios/CDVCamera.h" />
          <source-file src="src/ios/CDVCamera.m" />
          <header-file src="src/ios/CDVJpegHeaderWriter.h" />
@@ -98,6 +101,12 @@
          <framework src="CoreGraphics.framework" />
          <framework src="AssetsLibrary.framework" />
          <framework src="MobileCoreServices.framework" />
+         <framework src="CoreGraphics.framework" />
+         <framework src="AVFoundation.framework" />
+         
+         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+             <string></string>
+         </config-file>
      </platform>
 
      <!-- windows8 -->
